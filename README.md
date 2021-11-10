@@ -24,7 +24,7 @@ func main() {
 		Username: "test user",
 	}
 
-	ed, err := jwt.NewEncodeDecoder("SECRET_KEY SECRET_KEY SECRET_KEY SECRET_KEY SECRET_KEY SECRET_KEY")
+	ed, err := jwt.New("SECRET_KEY SECRET_KEY SECRET_KEY SECRET_KEY SECRET_KEY SECRET_KEY")
 	if err != nil {
 		panic(err)
 	}

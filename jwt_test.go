@@ -58,7 +58,7 @@ func TestEncodeDecoder(t *testing.T) {
 		},
 	}
 	for _, tc := range tt {
-		ed, err := NewEncodeDecoder(tc.key)
+		ed, err := New(tc.key)
 
 		if tc.expectedError != nil {
 			require.Equal(t, tc.expectedError, err)
